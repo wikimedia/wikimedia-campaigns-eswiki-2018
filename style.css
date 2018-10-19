@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #36c;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+header,
+main,
+footer {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 8rem;
+}
+
+header h1 {
+  background: linear-gradient(to right, #006847 0%, #e3871c 50%, #ce1225 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+header img {
+  height: 5rem;
+}
+
+header p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+main {
+  margin-top: 6rem;
+}
+
+main div {
+  display: flex;
+}
+
+main img {
+  border-radius: 2px;
+  height: 220px;
+}
+
+main section {
+  border: 1px solid #EAECF0;
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+main section h3 {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+}
+
+main section p {
+  font-size: 0.76rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+footer > section {
+  background: #F8F9FA;
+  border: 1px solid #EAECF0;
+  border-radius: 2px;
+}
+
+.visit {
+  min-width: 320px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.visit > div {
+  min-width: 100%;
+}
+
+.visit a {
+  display: block;
+  background: #fff;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid #999;
+  text-transform: none;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.app {
+  margin-left: -1px;
+  display: flex;
+  padding: 1.6rem;
+  color: #37393d;
+}
+
+.app img {
+  height: 120px;
+}
+
+.app section {
+  padding-left: 2rem;
+}
+
+.app h4 {
+  margin: 0;
+  margin-top: 4px;
+  letter-spacing: 0.8px;
+}
+
+.app p {
+  font-size: 0.8rem;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+}
+
+.app ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app ul li {
+  display: inline;
+}
+
+.app ul li a {
+  height: 20px;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+  background-position: center left;
+  background-size: 12px;
+}
+
+.app ul li a img{
+  height: 20px;
+}
+
+.app .google {
+  margin-left: 20px;
+  list-style: disc !important;
+}
+
+.google a {
+  background-image: url('google.png');
+}
+
+.apple a {
+  background-image: url('apple.png');
+}
+/* TODO: get wikimedia ui base */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  header img {
+    height: 12rem;
+  }
+
+  footer,
+  main div {
+    display: block;
+  }
+
+  main img {
+    height: auto;
+    width: 100%;
+  }
+
+  .visit {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .visit a {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .app {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .app p,
+  .app ul li a {
+    font-size: 1.05rem;
+  }
+
+  .app ul li {
+    display: block;
+  }
+
+  .app .google {
+    margin-left: 0;
+  }
+
+  .app img {
+    height: 250px;
+  }
+
+  .app ul li a {
+    height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    font-weight: normal;
+    background-position: center left;
+    background-size: 25px;
+  }
+
+  footer {
+    margin-bottom: 10rem;
+  }
+}
