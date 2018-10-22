@@ -166,11 +166,11 @@ footer > section {
 }
 
 .google a {
-  background-image: url('google.png');
+  background-image: url('android.svg');
 }
 
 .apple a {
-  background-image: url('apple.png');
+  background-image: url('apple.svg');
 }
 /* TODO: get wikimedia ui base */
 
