@@ -1,83 +1,63 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
+  font-size: 16px;
   font-family: 'Helvetica', Arial, sans-serif;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
   color: #36c;
-  font-size: 0.8rem;
-  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
-header,
-main,
-footer {
-  width: 800px;
-  margin: 0 auto;
-}
-
-header {
-  margin-top: 8rem;
-}
-
 header h1 {
+  font-size: 1.5rem;
   background: linear-gradient(to right, #006847 0%, #e3871c 50%, #ce1225 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-header img {
-  height: 5rem;
-}
-
-header p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-main {
-  margin-top: 6rem;
-}
-
-main div {
+main > div {
   display: flex;
+  flex-wrap: wrap;
 }
 
 main img {
   border-radius: 2px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 220px;
+  width: 100%;
+  height: auto;
 }
 
 main section {
   border: 1px solid #EAECF0;
-  border-left-width: 0;
   border-radius: 2px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   padding: 1.5rem;
 }
 
 main section h3 {
-  margin: 0;
   font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  margin: 0;
 }
 
 main section p {
-  font-size: 0.76rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
   line-height: 1.4;
   letter-spacing: 0.5px;
 }
 
+main section a {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
 footer {
   display: flex;
-  margin-top: 4rem;
-  margin-bottom: 8rem;
+  flex-wrap: wrap;
 }
 
 footer > section {
@@ -87,13 +67,13 @@ footer > section {
 }
 
 .visit {
-  min-width: 320px;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
 }
 
 .visit > div {
@@ -113,9 +93,9 @@ footer > section {
 }
 
 .app {
-  margin-left: -1px;
+  width: 100%;
   display: flex;
-  padding: 1.6rem;
+  padding: 1.3rem;
   color: #37393d;
 }
 
@@ -124,13 +104,12 @@ footer > section {
 }
 
 .app section {
-  padding-left: 2rem;
+  padding-left: 0.5rem;
 }
 
 .app h4 {
-  margin: 0;
-  margin-top: 4px;
   letter-spacing: 0.8px;
+  margin: 0;
 }
 
 .app p {
@@ -142,6 +121,7 @@ footer > section {
 .app ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .app ul li {
@@ -154,6 +134,9 @@ footer > section {
   padding-left: 17px;
   background-position: center left;
   background-size: 12px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.7;
 }
 
 .app ul li a img{
@@ -172,72 +155,82 @@ footer > section {
 .apple a {
   background-image: url('apple.svg');
 }
-/* TODO: get wikimedia ui base */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+/* Mobile Styles */
+@media only screen and (max-width: 800px) {
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
+
   header img {
-    height: 12rem;
-  }
-
-  footer,
-  main div {
-    display: block;
-  }
-
-  main img {
-    height: auto;
-    width: 100%;
-    border-radius: 4px;
+    width: 70%;
+    margin-top: 3rem;
   }
 
   main section {
-    border-left-width: 1px;
-    border-radius: 2px;
+    margin-top: 1px;
   }
 
   .visit {
-    font-size: 2rem;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .visit a {
-    font-size: 3rem;
-    margin: 2rem;
-  }
-
-  .app {
-    margin-top: 4rem;
-    font-size: 2rem;
-  }
-
-  .app p,
   .app ul li a {
-    font-size: 1.05rem;
-  }
-
-  .app ul li {
     display: block;
   }
+}
 
-  .app .google {
-    margin-left: 0;
+/* Desktop Styles */
+@media only screen and (min-width: 800px) {
+  .page {
+    width: 50rem;
+    margin: 0 auto;
   }
 
-  .app img {
-    height: 250px;
+  header img {
+    height: 5rem;
+    margin-top: 5rem;
   }
 
-  .app ul li a {
-    height: 40px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    font-weight: normal;
-    background-position: center left;
-    background-size: 25px;
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1.25rem;
+  }
+
+  main h2 {
+    margin-top: 5rem;
+  }
+
+  main img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  main section {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  main > div {
+    flex-wrap: nowrap;
   }
 
   footer {
-    margin-bottom: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-wrap: nowrap;
+  }
+
+  .visit {
+    max-width: 320px;
   }
 }
