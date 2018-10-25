@@ -23,6 +23,7 @@ header h1 {
 main > div {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 main img {
