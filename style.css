@@ -213,6 +213,7 @@ footer > section {
   }
 
   main img {
+    max-width: 320px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -235,5 +236,13 @@ footer > section {
 
   .visit {
     max-width: 320px;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .app {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
