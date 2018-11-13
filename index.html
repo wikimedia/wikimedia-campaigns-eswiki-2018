@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¡Bienvenidas y bienvenidos a Wikipedia!</title>
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+      function onArticleClick(event) {
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          _paq.push(['trackLink', 'https://es.wikipedia.org/wiki/M%C3%BAsica_de_Am%C3%A9rica_Latina', 'link']);
+          window.location = 'https://es.wikipedia.org/wiki/M%C3%BAsica_de_Am%C3%A9rica_Latina';
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="page">
@@ -21,7 +30,7 @@
 
       <main>
         <h2>¡Pruébala!</h2>
-        <div onclick="_paq.push(['trackLink', 'https://es.wikipedia.org/wiki/M%C3%BAsica_de_Am%C3%A9rica_Latina', 'link']);window.location='https://es.wikipedia.org/wiki/M%C3%BAsica_de_Am%C3%A9rica_Latina'">
+        <div onclick="onArticleClick(event)">
           <img
             src="hero-320.jpg"
             alt="Festival mundial de Tango en Buenos Aires, Argentina"
@@ -30,6 +39,7 @@
             <h3>Música de América Latina</h3>
             <p>
               La música de América Latina, también llamada música latinoamericana, música latina o “ritmos latinos”, es la música cultivada en los países de América Latina. Comprende géneros autóctonos de la región como el bolero, la salsa, la bossa nova, la música tropical, el merengue, o la bachata, entre otros, y también los géneros que derivan de estilos más internacionales como el pop, rock y jazz latinos.
+              <small><a href="https://commons.wikimedia.org/wiki/File:Festival_mundial_de_Tango_en_Buenos_Aires,_Argentina.jpg" class="piwik_link">Foto del festival mundial de Tango</a> de <a href="https://www.flickr.com/photos/100746656@N07/" class="piwik_link">Virginia Innocenti</a>, disponible bajo licencia <a href="https://creativecommons.org/licenses/by/2.0/deed.es" class="piwik_link">CC-BY 2.0</a></small>
             </p>
             <a href="https://es.wikipedia.org/wiki/M%C3%BAsica_de_Am%C3%A9rica_Latina" class="piwik_link">Lee más</a>
           </section>

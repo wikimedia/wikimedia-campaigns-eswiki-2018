@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---------------------------------------
+
+The Tango images that are present as hero-*.jpg in the source tree correspond to
+https://commons.wikimedia.org/wiki/File:Festival_mundial_de_Tango_en_Buenos_Aires,_Argentina.jpg
+originally posted to Flickr by virginiainnocenti at https://www.flickr.com/photos/100746656@N07/9581618029
+and are available under the Creative Commons Attribution 2.0 Generic license, see
+https://creativecommons.org/licenses/by/2.0/deed.en
